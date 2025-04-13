@@ -35,3 +35,44 @@ button {
 .dark-mode header, .dark-mode footer {
     background: #2c2c2c;
 }
+
+.spinner {
+    margin-top: 1rem;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #4CAF50;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+    display: block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.status-ampel {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 1rem;
+}
+.status-gruen { background: #c8e6c9; color: #256029; }
+.status-gelb  { background: #fff3cd; color: #856404; }
+.status-rot   { background: #f8d7da; color: #721c24; }
+
+.sticky-export {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}

@@ -28,16 +28,22 @@
             <label for="upload">Pläne hochladen (mehrere möglich):</label>
             <input type="file" id="upload" multiple>
             <ul id="file-list"></ul>
+            <p id="message"></p>
             <button onclick="analyzeFiles()">Jetzt analysieren</button>
+            <div id="spinner" class="spinner" style="display:none;"></div>
+            <div id="progressText"></div>
         </section>
 
         <section id="analysis" style="display:none;">
             <h2>Analyse</h2>
             <p>Gebäudeklasse: 2</p>
-            <p>Brandschutzkonzept erforderlich: Ja</p>
+            <p>Brandschutzkonzept erforderlich: <strong>Ja</strong></p>
             <p>Empfohlene Maßnahmen: 2 bauliche Rettungswege, Rauchschutz-Treppenraum</p>
+            <div class="status-ampel status-rot">Mängel erkannt</div>
         </section>
     </main>
+
+    <button id="export" class="sticky-export">PDF-Export</button>
 
     <footer>
         <p>© 2025 – Brandschutz-KI (Prototyp)</p>
