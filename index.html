@@ -25,11 +25,13 @@
         </section>
 
         <section>
-            <label for="upload">Grundriss hochladen:</label>
-            <input type="file" id="upload">
+            <label for="upload">Pläne hochladen (mehrere möglich):</label>
+            <input type="file" id="upload" multiple>
+            <ul id="file-list"></ul>
+            <button onclick="analyzeFiles()">Jetzt analysieren</button>
         </section>
 
-        <section>
+        <section id="analysis" style="display:none;">
             <h2>Analyse</h2>
             <p>Gebäudeklasse: 2</p>
             <p>Brandschutzkonzept erforderlich: Ja</p>
