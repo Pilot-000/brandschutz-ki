@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandschutz-KI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Brandschutz-KI</h1>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
+    </header>
+
+    <main>
+        <section>
+            <label for="bundesland">Bundesland wählen:</label>
+            <select id="bundesland">
+                <option>Nordrhein-Westfalen</option>
+                <option>Bayern</option>
+                <option>Berlin</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="upload">Grundriss hochladen:</label>
+            <input type="file" id="upload">
+        </section>
+
+        <section>
+            <h2>Analyse</h2>
+            <p>Gebäudeklasse: 2</p>
+            <p>Brandschutzkonzept erforderlich: Ja</p>
+            <p>Empfohlene Maßnahmen: 2 bauliche Rettungswege, Rauchschutz-Treppenraum</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 – Brandschutz-KI (Prototyp)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
